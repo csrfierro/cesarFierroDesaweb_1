@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Acuario</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Jost:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap");
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html"><img src="./recursos/img/logo.png" alt="" /></a>
+        <h1>Mi acuario</h1>
+      </div>
+
+      <div>
+        <nav class="menuNavegacion">
+          <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="./pages/peces.html">Peces</a></li>
+            <li><a href="./pages/acuarios.html">Acuarios</a></li>
+            <li><a href="./pages/filtros.html">Filtros</a></li>
+            <li><a href="./pages/sobreNosotros.html">Sobre nosotros</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="contenido">
+          <div>
+            <h2>Novedades</h2>
+            <p>banner con novedades</p>
+          </div>
+
+          <div>
+            <h2>Ofertas</h2>
+            <p>banner con ofertas</p>
+          </div>
+          <div>
+            <h2>Destacados</h2>
+            <p>banner con destacados</p>
+          </div>
+        </div>
+
+        <section>
+          <div class="text_info">
+            <h2>Nuestra historia</h2>
+            <p class="textParrafo">
+              Nuestra historia comienza con una pasión simple: el interés por el
+              mundo de la acuariofilia y el deseo de crear acuarios saludables,
+              equilibrados y visualmente atractivos. Como muchos aficionados,
+              empezamos aprendiendo mediante la práctica, investigando sobre el
+              cuidado de peces, plantas acuáticas y el mantenimiento adecuado
+              del acuario. Con el tiempo, esa experiencia fue creciendo y se
+              transformó en la idea de desarrollar una tienda online de
+              acuariofilia, pensada para reunir en un solo lugar productos
+              confiables, información clara y recursos útiles tanto para
+              principiantes como para aficionados con experiencia. A lo largo
+              del camino fuimos probando distintos filtros para acuarios,
+              sistemas de iluminación LED, sustratos y fertilizantes para
+              acuarios plantados, entendiendo que cada acuario es único y
+              requiere soluciones adecuadas según sus habitantes y condiciones
+              del agua. Este sitio web nace como un proyecto de práctica en
+              desarrollo web, pero está inspirado en una experiencia real dentro
+              del hobby. Nuestro objetivo es seguir aprendiendo, mejorando la
+              plataforma y ofreciendo una experiencia de compra simple y
+              ordenada, enfocada en el bienestar de peces y plantas acuáticas.
+              Hoy continuamos creciendo, sumando contenido y productos
+              relacionados con la acuariofilia de agua dulce, con la intención
+              de crear una comunidad donde compartir conocimiento, buenas
+              prácticas y la pasión por los acuarios.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <h2>Video informativo de la semana</h2>
+            <iframe
+              width="700"
+              height="394"
+              src="https://www.youtube.com/embed/en4PV1hpP7A?start=68&end=615" 
+              frameborder="0"
+              allowfullscreen
+            >
+            <!-- /embed/ necesario para que youtube no bloquee la -->
+            </iframe>
+          </div>
+        </section>
+      </section>
+      <section class="formularioContacto">
+        <h2>Contactanos</h2>
+        <form action="/submit" method="post">
+          <label for="">Email</label>
+          <input type="email" name="emailIn" id="email" />
+          <label for="">Nombre</label>
+          <input type="text" name="nombreIn" id="nombre" />
+          <label for="">Apellido</label>
+          <input type="text" name="apellidoIn" id="apellido" />
+          <label for="">Celular</label>
+          <input type="number" name="celularIn" id="celular" />
+          <label for="">Mensaje</label>
+          <textarea name="areaText" id="Mensaje"></textarea>
+          <label for="">Motivo de contacto</label>
+          <select>
+            <option class="opciones">Consulta</option>
+            <option class="opciones">Compra</option>
+            <option class="opciones">Reclamo</option>
+            <option class="opciones">Otro</option>
+          </select>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <a href="https://www.instagram.com/" target="_blank"
+        ><img src="./recursos/img/instagram-50.png" alt=""
+      /></a>
+      <a href="https://www.youtube.com/" target="_blank"
+        ><img src="./recursos/img/youtube-50.png" alt=""
+      /></a>
+      <a href="https://x.com/" target="_blank"
+        ><img src="./recursos/img/x-50.png" alt=""
+      /></a>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+  </body>
+</html>
