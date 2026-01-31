@@ -14,73 +14,246 @@
     />
   </head>
 
-  <body>
-    <header class="container-sm">
+  <body class="container-xxl">
+    <header>
       <div class="logo row justify-content-center">
-        <div class="col-12 col-sm-2 d-flex justify-content-center">
+        <div
+          class="logo__imagen col-2 col-sm-1 d-flex justify-content-center align-items-center"
+        >
           <a href="./index.html"
-        ><img src="./recursos/img/logo.png" alt=""
+            ><img src="./recursos/img/logo.png" alt=""
           /></a>
         </div>
-        <div class="col-12 col-sm-5 d-flex justify-content-center justify-content-sm-start">
+        <div
+          class="col-12 col-sm-5 d-flex justify-content-center justify-content-sm-start align-items-center"
+        >
           <h1>Mi acuario</h1>
         </div>
       </div>
 
- <nav class="navbar navbar-expand-sm">
-  <div class="container-sm">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/peces.html">Peces</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/acuarios.html">Acuarios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/filtros.html">Filtros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/sobreNosotros.html">Sobre nosotros</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-sm">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/peces.html">Peces</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/acuarios.html">Acuarios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/filtros.html">Filtros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/sobreNosotros.html"
+                  >Sobre nosotros</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-
-
-
-
-    <main>
+    <main class="row">
       <section>
         <div class="contenido">
           <div>
             <h2>Novedades</h2>
-            <p>banner con novedades</p>
+            <div class="gridProductos">
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="./recursos/img/Puntius-titteya-ladies.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Puntius titteya ladies</p>
+                <p class="producto__precio">$290.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="./recursos/img/pez-platy-nascapers-online.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Xiphophorus maculatus (Platy)</p>
+                <p class="producto__precio">$120.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="./recursos/img/filtro-tidal-110-seachem.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Filtro Tidal 110</p>
+                <p class="producto__precio">$5200.00</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="./recursos/img/neon-tetra-fish.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">
+                  Neon Tetra (Paracheirodon innesi)
+                </p>
+                <p class="producto__precio">$149.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+            </div>
           </div>
 
           <div>
             <h2>Ofertas</h2>
-            <p>banner con ofertas</p>
+            <div class="gridProductos">
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="./recursos/img/Puntius-titteya-ladies.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Puntius titteya ladies</p>
+                <p class="producto__precio">$290.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="./recursos/img/pez-platy-nascapers-online.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Xiphophorus maculatus (Platy)</p>
+                <p class="producto__precio">$120.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="./recursos/img/filtro-tidal-110-seachem.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Filtro Tidal 110</p>
+                <p class="producto__precio">$5200.00</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="./recursos/img/neon-tetra-fish.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">
+                  Neon Tetra (Paracheirodon innesi)
+                </p>
+                <p class="producto__precio">$149.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+            </div>
           </div>
           <div>
             <h2>Destacados</h2>
-            <p>banner con destacados</p>
+            <div class="gridProductos">
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="./recursos/img/Puntius-titteya-ladies.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Puntius titteya ladies</p>
+                <p class="producto__precio">$290.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="./recursos/img/pez-platy-nascapers-online.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Xiphophorus maculatus (Platy)</p>
+                <p class="producto__precio">$120.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="./recursos/img/filtro-tidal-110-seachem.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Filtro Tidal 110</p>
+                <p class="producto__precio">$5200.00</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="./recursos/img/neon-tetra-fish.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">
+                  Neon Tetra (Paracheirodon innesi)
+                </p>
+                <p class="producto__precio">$149.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+            </div>
           </div>
         </div>
-
-        <section>
+        <section class="row">
           <div class="text_info">
             <h2>Nuestra historia</h2>
-            <p class="textParrafo">
+            <p class="textParrafo ">
               Nuestra historia comienza con una pasión simple: el interés por el
               mundo de la acuariofilia y el deseo de crear acuarios saludables,
               equilibrados y visualmente atractivos. Como muchos aficionados,
@@ -158,6 +331,10 @@
         ><img src="./recursos/img/x-50.png" alt=""
       /></a>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
