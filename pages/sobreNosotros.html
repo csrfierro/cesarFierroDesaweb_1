@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,34 +9,74 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Jost:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap");
     </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
   </head>
-  <body>
+  <body class="container-xxl">
     <header>
-      <div class="logo">
-        <a href="../index.html"
-          ><img src="../recursos/img/logo.png" alt=""
-        /></a>
-        <h1 class="logoTitulo">Mi acuario</h1>
+      <div class="logo row justify-content-center">
+        <div
+          class="logo__imagen col-2 col-sm-1 d-flex justify-content-center align-items-center"
+        >
+          <a href="./index.html"
+            ><img src="../recursos/img/logo.png" alt=""
+          /></a>
+        </div>
+        <div
+          class="col-12 col-sm-5 d-flex justify-content-center justify-content-sm-start align-items-center"
+        >
+          <h1>Mi acuario</h1>
+        </div>
       </div>
 
-      <div>
-        <nav class="menuNavegacion">
-          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./peces.html">Peces</a></li>
-            <li><a href="./acuarios.html">Acuarios</a></li>
-            <li><a href="./filtros.html">Filtros</a></li>
-            <li><a href="">Sobre nosotros</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-sm">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link menuFont" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menuFont" href="./peces.html">Peces</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menuFont" href="./acuarios.html">Acuarios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menuFont" href="./filtros.html">Filtros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active menuFont" href="./sobreNosotros.html"
+                  ><strong>Sobre nosotros</strong></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main>
 
-      <section class="text_info">
-        <div class="textParrafo">
+    <main>
+      <section>
+        <div class="text_info">
           <h2>Sobre nosotros</h2>
-          <p>
+          <p class="textParrafo">
             Somos un espacio dedicado a la acuariofilia y al cuidado responsable
             de los ecosistemas acuáticos. Creemos que un acuario no es solo un
             elemento decorativo, sino un pequeño mundo vivo que requiere
@@ -44,9 +84,11 @@
             a cada persona en el proceso de crear y mantener acuarios
             saludables, equilibrados y estéticamente agradables.
           </p>
+        </div>
 
+        <div class="text_info">
           <h3>Nuestra misión</h3>
-          <p>
+          <p class="textParrafo">
             Nuestra misión es brindar información clara, confiable y fácil de
             entender sobre el cuidado de peces y plantas acuáticas. Buscamos
             ayudar tanto a quienes se inician en la acuariofilia como a aquellos
@@ -54,45 +96,55 @@
             siempre prácticas responsables que prioricen el bienestar animal y
             la estabilidad del ecosistema.
           </p>
+        </div>
 
+        <div class="text_info">
           <h3>Nuestra visión</h3>
-          <p>
+          <p class="textParrafo">
             Aspiramos a ser una referencia en contenidos sobre acuarios de agua
             fría, templada y salada, así como en acuarios plantados low tech.
             Queremos inspirar a las personas a crear acuarios más naturales,
             sostenibles y duraderos, donde peces y plantas puedan desarrollarse
             de manera saludable a lo largo del tiempo.
           </p>
+        </div>
 
+        <div class="text_info">
           <h3>Qué hacemos</h3>
-          <p>
+          <p class="textParrafo">
             Desarrollamos guías prácticas, artículos informativos y
             recomendaciones basadas en experiencias reales de acuariofilia.
             Nuestro contenido abarca desde la elección del acuario y el sistema
             de filtración, hasta la iluminación, el sustrato, el mantenimiento y
             la selección adecuada de peces y plantas para cada tipo de acuario.
           </p>
+        </div>
 
+        <div class="text_info">
           <h3>Nuestro enfoque</h3>
-          <p>
+          <p class="textParrafo">
             Nos enfocamos especialmente en acuarios de bajo mantenimiento,
             conocidos como low tech, ya que consideramos que son una excelente
             opción para lograr sistemas estables sin necesidad de equipos
             complejos. Creemos que la simplicidad, cuando está bien planificada,
             es clave para el éxito a largo plazo de un acuario.
           </p>
+        </div>
 
+        <div class="text_info">
           <h3>Nuestro compromiso</h3>
-          <p>
+          <p class="textParrafo">
             Nos comprometemos a ofrecer información actualizada y honesta,
             evitando falsas promesas y soluciones milagrosas. Promovemos el
             aprendizaje continuo, el respeto por la vida acuática y la toma de
             decisiones responsables, ayudando a prevenir errores comunes que
             pueden afectar la salud de peces y plantas.
           </p>
+        </div>
 
+        <div class="text_info">
           <h3>A quiénes nos dirigimos</h3>
-          <p>
+          <p class="textParrafo">
             Este espacio está pensado para principiantes que dan sus primeros
             pasos en la acuariofilia, así como para aficionados que buscan
             mejorar sus acuarios actuales. Nuestro objetivo es que cada lector
@@ -102,7 +154,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="piePagina">
       <a href="https://www.instagram.com/" target="_blank"
         ><img src="../recursos/img/instagram-50.png" alt=""
       /></a>
@@ -113,5 +165,7 @@
         ><img src="../recursos/img/x-50.png" alt=""
       /></a>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

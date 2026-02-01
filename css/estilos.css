@@ -5,11 +5,13 @@
   box-sizing: border-box;
 }
 
-* {
+/* * {
   outline: 1px solid red;
+} */
+
+.menuFont {
+  font-size: 1.5rem !important;
 }
-
-
 
 
 html, body {
@@ -46,32 +48,13 @@ body {
 
 
 
-.menuNavegacion {
-  border: 0.1rem solid red;
-  margin: 2rem;
-  width: auto;
-  width: fit-content;
-  font-family: "Share Tech", sans-serif;
-}
-
-.menuNavegacion ul{
-  display: flex;
-  padding: 1rem;
-  gap: 5rem;
-  list-style: none;
-}
-
-.menuNavegacion ul a {
-  font-size: 1.2rem;
-  color: black;
-}
 
 .gridProductos {
   display: grid;
   grid-template-columns: repeat(4, minmax(12rem, 1fr));
   grid-template-rows: auto;
   margin: 2rem;
-  gap: 0.1rem;
+  gap: 1rem !important;
   justify-content: center;
   justify-items: center;
 }
@@ -80,7 +63,7 @@ body {
   .gridProductos {
     grid-template-columns: repeat(2, minmax(12rem, 1fr));
   justify-content: center;
-  gap: 0.1rem;
+  gap: 1.5rem;
   }
 
 }
@@ -110,7 +93,7 @@ body {
 
 .producto__titulo {
   height: 3rem;
-  align-content: center;
+  align-content: top;
   margin-bottom: 0rem;
 }
 .producto__imagen--foto {
@@ -143,24 +126,30 @@ main {
 
 
 
-.text_info {
-  font-family: "Jost", sans-serif;
+h2{
+color: blue !important;
 }
 
-.text_info h2{
-color: blue;
-font-size: 2rem;
-}
-
-.text_info h3{
-color: blue;
+h3{
+color: blue!important;
 font-size: 1.3rem;
+align-items: left;
 }
 
+.text_info {
+    font-family: "Jost", sans-serif;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: left !important;
+  justify-content: center !important;
+  margin: 1rem !important;
+}
 
 .text_info .textParrafo {
   text-align: left;
-  margin: 2rem;
+  position: relative !important;
+  margin: 0.5rem !important;
 }
 
 
@@ -169,11 +158,52 @@ font-size: 1.3rem;
 list-style:none
   }
 
-.formularioContacto {
+/* .formularioContacto {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   width: 30rem;
   margin: 2rem auto;
+} */
+
+.contactanos  {
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem !important;
 }
 
+.formularioContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  width: 20rem !important;
+  grid-template-rows: auto;
+}
+
+.formularioContacto__campo {
+  display: flex;
+  align-items: center;
+}
+
+.formularioContacto__campo label{
+width: 5rem;
+text-align: left;
+}
+
+.piePagina {
+  display: flex ;
+  flex-direction: row;
+  justify-content: center ;
+  margin-top: 3rem;
+}
+
+.accordion-item{
+  background-color: rgb(255, 255, 255,0.1) !important; /* negro 60% */
+}
+
+.accordion-button {
+  background-color: rgba(0, 200, 255, 0.2) !important; /* negro 60% */
+}
