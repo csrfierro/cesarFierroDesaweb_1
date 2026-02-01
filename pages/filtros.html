@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,27 +8,70 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Jost:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap");
     </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
   </head>
-  <body>
+
+  <body class="container-xxl">
     <header>
-      <div class="logo">
-        <a href="../index.html"
-          ><img src="../recursos/img/logo.png" alt=""
-        /></a>
-        <h1 class="logoTitulo">Mi acuario</h1>
+      <div class="logo row justify-content-center">
+        <div
+          class="logo__imagen col-2 col-sm-1 d-flex justify-content-center align-items-center"
+        >
+          <a href="./index.html"
+            ><img src="../recursos/img/logo.png" alt=""
+          /></a>
+        </div>
+        <div
+          class="col-12 col-sm-5 d-flex justify-content-center justify-content-sm-start align-items-center"
+        >
+          <h1>Mi acuario</h1>
+        </div>
       </div>
 
-      <div>
-        <nav class="menuNavegacion">
-          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./peces.html">Peces</a></li>
-            <li><a href="./acuarios.html">Acuarios</a></li>
-            <li><a href="">Filtros</a></li>
-            <li><a href="./sobreNosotros.html">Sobre nosotros</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-sm">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link menuFont" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menuFont" href="./peces.html">Peces</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menuFont" href="./acuarios.html">Acuarios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active menuFont" href=""
+                  ><strong>Filtros</strong></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menuFont" href="./sobreNosotros.html"
+                  >Sobre nosotros</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
       <nav>
@@ -39,107 +82,197 @@
           <li><a href="">Cascada</a></li>
         </ul>
       </nav>
-    
-        <section class="contenido">
-          <div>
-              <p>
-                Aca los articulos, debe cambiar dependiendo de lo que
-                selecionemos arriba (todo,canister, Internos,etc)
-              </p>
+
+      <section class="contenido">
+        <div
+          class="alert alert-warning alert-dismissible fade show"
+          role="alert"
+        >
+          <strong>Atención!</strong> En esta zona deberian aparecer los
+          articulos dependiendo de lo que se seleccione en el menú de arriba.
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+          ></button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Información Relevante</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                Filtro Canister (externo)
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="text_info">
+                  <p class="textParrafo">
+                    El filtro canister es un filtro externo que se coloca fuera
+                    del acuario. Es uno de los sistemas de filtración más
+                    eficientes y se recomienda para acuarios medianos y grandes.
+                  </p>
+                </div>
+
+                <div class="text_info">
+                  <h3>Características principales</h3>
+                  <ul class="textParrafo">
+                    <li>Se instala fuera del acuario</li>
+                    <li>Alta capacidad de filtración</li>
+                    <li>Funcionamiento silencioso</li>
+                    <li>Gran espacio para material filtrante</li>
+                  </ul>
+                </div>
+
+                <div class="text_info">
+                  <h3>Ventajas</h3>
+                  <ul class="textParrafo">
+                    <li>Excelente filtración biológica, mecánica y química</li>
+                    <li>Menor mantenimiento</li>
+                    <li>No ocupa espacio dentro del acuario</li>
+                  </ul>
+                </div>
+
+                <div class="text_info">
+                  <h3>Desventajas</h3>
+                  <ul class="textParrafo">
+                    <li>Mayor costo inicial</li>
+                    <li>Instalación más compleja</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
-    
-      <section class="text_info">
-        <div class="textParrafo">
-          <h2>Filtro Canister (externo)</h2>
-          <p>
-            El filtro canister es un filtro externo que se coloca fuera del
-            acuario. Es uno de los sistemas de filtración más eficientes y se
-            recomienda para acuarios medianos y grandes.
-          </p>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Filtro interno
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="text_info">
+                  <p class="textParrafo">
+                    El filtro interno se coloca dentro del acuario y es común en
+                    acuarios pequeños o para principiantes. Es fácil de instalar
+                    y de bajo costo.
+                  </p>
+                </div>
 
-          <h3>Características principales</h3>
-          <ul>
-            <li>Se instala fuera del acuario</li>
-            <li>Alta capacidad de filtración</li>
-            <li>Funcionamiento silencioso</li>
-            <li>Gran espacio para material filtrante</li>
-          </ul>
+                <div class="text_info">
+                  <h3>Características principales</h3>
+                  <ul class="textParrafo">
+                    <li>Instalación dentro del acuario</li>
+                    <li>Fácil de montar y mantener</li>
+                    <li>Ocupa espacio interno</li>
+                  </ul>
+                </div>
 
-          <h3>Ventajas</h3>
-          <ul>
-            <li>Excelente filtración biológica, mecánica y química</li>
-            <li>Menor mantenimiento</li>
-            <li>No ocupa espacio dentro del acuario</li>
-          </ul>
+                <div class="text_info">
+                  <h3>Ventajas</h3>
+                  <ul class="textParrafo">
+                    <li>Económico</li>
+                    <li>Ideal para acuarios pequeños</li>
+                    <li>Instalación rápida</li>
+                  </ul>
+                </div>
 
-          <h3>Desventajas</h3>
-          <ul>
-            <li>Mayor costo inicial</li>
-            <li>Instalación más compleja</li>
-          </ul>
+                <div class="text_info">
+                  <h3>Desventajas</h3>
+                  <ul class="textParrafo">
+                    <li>Menor capacidad de filtración</li>
+                    <li>Espacio limitado para material biológico</li>
+                    <li>Puede afectar la estética del acuario</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Filtro de cascada (Hang On)
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="text_info">
+                  <p class="textParrafo">
+                    El filtro de cascada se cuelga en el borde del acuario y
+                    devuelve el agua en forma de caída, ayudando a la
+                    oxigenación.
+                  </p>
+                </div>
 
-          ---
+                <div class="text_info">
+                  <h3>Características principales</h3>
+                  <ul class="textParrafo">
+                    <li>Se cuelga en el borde del acuario</li>
+                    <li>Buena oxigenación del agua</li>
+                    <li>Fácil acceso al material filtrante</li>
+                  </ul>
+                </div>
 
-          <h2>Filtro interno</h2>
-          <p>
-            El filtro interno se coloca dentro del acuario y es común en
-            acuarios pequeños o para principiantes. Es fácil de instalar y de
-            bajo costo.
-          </p>
+                <div class="text_info">
+                  <h3>Ventajas</h3>
+                  <ul class="textParrafo">
+                    <li>Mantenimiento sencillo</li>
+                    <li>Buena relación precio–rendimiento</li>
+                    <li>No ocupa espacio dentro del acuario</li>
+                  </ul>
+                </div>
 
-          <h3>Características principales</h3>
-          <ul>
-            <li>Instalación dentro del acuario</li>
-            <li>Fácil de montar y mantener</li>
-            <li>Ocupa espacio interno</li>
-          </ul>
-
-          <h3>Ventajas</h3>
-          <ul>
-            <li>Económico</li>
-            <li>Ideal para acuarios pequeños</li>
-            <li>Instalación rápida</li>
-          </ul>
-
-          <h3>Desventajas</h3>
-          <ul>
-            <li>Menor capacidad de filtración</li>
-            <li>Espacio limitado para material biológico</li>
-            <li>Puede afectar la estética del acuario</li>
-          </ul>
-
-          ---
-
-          <h2>Filtro de cascada (Hang On)</h2>
-          <p>
-            El filtro de cascada se cuelga en el borde del acuario y devuelve el
-            agua en forma de caída, ayudando a la oxigenación.
-          </p>
-
-          <h3>Características principales</h3>
-          <ul>
-            <li>Se cuelga en el borde del acuario</li>
-            <li>Buena oxigenación del agua</li>
-            <li>Fácil acceso al material filtrante</li>
-          </ul>
-
-          <h3>Ventajas</h3>
-          <ul>
-            <li>Mantenimiento sencillo</li>
-            <li>Buena relación precio–rendimiento</li>
-            <li>No ocupa espacio dentro del acuario</li>
-          </ul>
-
-          <h3>Desventajas</h3>
-          <ul>
-            <li>No recomendado para acuarios muy grandes</li>
-            <li>Puede generar ruido si baja el nivel de agua</li>
-          </ul>
+                <div class="text_info">
+                  <h3>Desventajas</h3>
+                  <ul class="textParrafo">
+                    <li>No recomendado para acuarios muy grandes</li>
+                    <li>Puede generar ruido si baja el nivel de agua</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="piePagina">
       <a href="https://www.instagram.com/" target="_blank"
         ><img src="../recursos/img/instagram-50.png" alt=""
       /></a>
@@ -150,5 +283,6 @@
         ><img src="../recursos/img/x-50.png" alt=""
       /></a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

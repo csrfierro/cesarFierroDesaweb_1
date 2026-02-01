@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,28 +8,69 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Jost:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap");
     </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
   </head>
-  <body>
+  <body class="container-xxl">
     <header>
-      <div class="logo">
-        <a href="../index.html"
-          ><img src="../recursos/img/logo.png" alt=""
-        /></a>
-        <h1>Mi acuario</h1>
+      <div class="logo row justify-content-center">
+        <div
+          class="logo__imagen col-2 col-sm-1 d-flex justify-content-center align-items-center"
+        >
+          <a href="./index.html"
+            ><img src="../recursos/img/logo.png" alt=""
+          /></a>
+        </div>
+        <div
+          class="col-12 col-sm-5 d-flex justify-content-center justify-content-sm-start align-items-center"
+        >
+          <h1>Mi acuario</h1>
+        </div>
       </div>
 
-      <div>
-        <nav class="menuNavegacion">
-          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="">Peces</a></li>
-            <li><a href="./acuarios.html">Acuarios</a></li>
-            <li><a href="./filtros.html">Filtros</a></li>
-            <li><a href="./sobreNosotros.html">Sobre nosotros</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-sm">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link menuFont" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active menuFont" href=""><strong>Peces</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menuFont" href="./acuarios.html">Acuarios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menuFont" href="./filtros.html">Filtros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menuFont" href="./sobreNosotros.html"
+                  >Sobre nosotros</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
+
     <main>
       <nav>
         <ul>
@@ -40,116 +81,214 @@
         </ul>
       </nav>
       <section class="contenido">
-        <div>
-          <p>
-            Aca los articulos, debe cambiar dependiendo de lo que selecionemos
-            arriba (todo,agua fría,etc)
-          </p>
+        <div
+          class="alert alert-warning alert-dismissible fade show"
+          role="alert"
+        >
+          <strong>Atención!</strong> En esta zona deberian aparecer los
+          articulos dependiendo de lo que se seleccione en el menú de arriba.
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+          ></button>
         </div>
       </section>
-      <section class="text_info">
-        <div class="textParrafo">
-          <h2>Peces de agua templada</h2>
-          <p>
-            Los peces de agua templada viven en un rango intermedio de
-            temperatura, generalmente entre 20 y 26 °C. Son muy populares porque
-            no siempre requieren calentador y son fáciles de mantener.
-          </p>
 
-          <h3>Características principales</h3>
-          <ul>
-            <li>Viven en temperaturas entre 20 y 26 °C</li>
-            <li>No siempre requieren calentador</li>
-            <li>Son resistentes y fáciles de mantener</li>
-            <li>Aptos para acuarios comunitarios</li>
-          </ul>
+      <section>
+        <h2>Información Relevante</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                Peces de agua templada
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="text_info">
+                  <p class="textParrafo">
+                    Los peces de agua templada viven en un rango intermedio de
+                    temperatura, generalmente entre 20 y 26 °C. Son muy
+                    populares porque no siempre requieren calentador y son
+                    fáciles de mantener.
+                  </p>
+                </div>
 
-          <h3>Ejemplos de peces de agua templada</h3>
-          <ul>
-            <li>Platy</li>
-            <li>Molly</li>
-            <li>Guppy</li>
-            <li>Espada</li>
-            <li>Barbo cereza</li>
-            <li>Tetra Buenos Aires</li>
-          </ul>
+                <div class="text_info">
+                  <h3>Características principales</h3>
+                  <ul class="textParrafo">
+                    <li>Viven en temperaturas entre 20 y 26 °C</li>
+                    <li>No siempre requieren calentador</li>
+                    <li>Son resistentes y fáciles de mantener</li>
+                    <li>Aptos para acuarios comunitarios</li>
+                  </ul>
+                </div>
 
-          <h3>Requisitos básicos</h3>
-          <ul>
-            <li>Filtro con buena filtración biológica</li>
-            <li>Cambios de agua semanales</li>
-            <li>
-              Alimentación variada (escamas, gránulos y alimento vivo ocasional)
-            </li>
-          </ul>
+                <div class="text_info">
+                  <h3>Ejemplos de peces de agua templada</h3>
+                  <ul class="textParrafo">
+                    <li>Platy</li>
+                    <li>Molly</li>
+                    <li>Guppy</li>
+                    <li>Espada</li>
+                    <li>Barbo cereza</li>
+                    <li>Tetra Buenos Aires</li>
+                  </ul>
+                </div>
 
-          <h2>Peces de agua fría</h2>
-          <p>
-            Los peces de agua fría no requieren calentador y viven en
-            temperaturas entre 16 y 22 °C. Son resistentes, pero suelen producir
-            más desechos, por lo que necesitan buena filtración.
-          </p>
+                <div class="text_info">
+                  <h3>Requisitos básicos</h3>
+                  <ul class="textParrafo">
+                    <li>Filtro con buena filtración biológica</li>
+                    <li>Cambios de agua semanales</li>
+                    <li>
+                      Alimentación variada (escamas, gránulos y alimento vivo
+                      ocasional)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Peces de agua fría
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="text_info">
+                  <p class="textParrafo">
+                    Los peces de agua fría no requieren calentador y viven en
+                    temperaturas entre 16 y 22 °C. Son resistentes, pero suelen
+                    producir más desechos, por lo que necesitan buena
+                    filtración.
+                  </p>
+                </div>
 
-          <h3>Características principales</h3>
-          <ul>
-            <li>Viven en temperaturas entre 16 y 22 °C</li>
-            <li>No requieren calentador</li>
-            <li>Consumen más oxígeno</li>
-            <li>Producen mayor cantidad de desechos</li>
-          </ul>
+                <div class="text_info">
+                  <h3>Características principales</h3>
+                  <ul class="textParrafo">
+                    <li>Viven en temperaturas entre 16 y 22 °C</li>
+                    <li>No requieren calentador</li>
+                    <li>Consumen más oxígeno</li>
+                    <li>Producen mayor cantidad de desechos</li>
+                  </ul>
+                </div>
 
-          <h3>Ejemplos de peces de agua fría</h3>
-          <ul>
-            <li>Goldfish (Carassius)</li>
-            <li>Shubunkin</li>
-            <li>Telescopio</li>
-            <li>Cometa</li>
-            <li>Oranda</li>
-          </ul>
+                <div class="text_info">
+                  <h3>Ejemplos de peces de agua fría</h3>
+                  <ul class="textParrafo">
+                    <li>Goldfish (Carassius)</li>
+                    <li>Shubunkin</li>
+                    <li>Telescopio</li>
+                    <li>Cometa</li>
+                    <li>Oranda</li>
+                  </ul>
+                </div>
 
-          <h3>Requisitos básicos</h3>
-          <ul>
-            <li>Acuarios grandes (mínimo 40–50 litros por pez)</li>
-            <li>Filtro potente</li>
-            <li>Cambios de agua frecuentes</li>
-            <li>Evitar la sobrepoblación</li>
-          </ul>
-          <h2>Peces de agua salada</h2>
-          <p>
-            Los peces de agua salada viven en ambientes marinos y requieren un
-            manejo más técnico. Son muy vistosos, pero demandan mayor control de
-            los parámetros del agua.
-          </p>
+                <div class="text_info">
+                  <h3>Requisitos básicos</h3>
+                  <ul class="textParrafo">
+                    <li>Acuarios grandes (mínimo 40–50 litros por pez)</li>
+                    <li>Filtro potente</li>
+                    <li>Cambios de agua frecuentes</li>
+                    <li>Evitar la sobrepoblación</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Peces de agua salada
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="text_info">
+                  <p class="textParrafo">
+                    Los peces de agua salada viven en ambientes marinos y
+                    requieren un manejo más técnico. Son muy vistosos, pero
+                    demandan mayor control de los parámetros del agua.
+                  </p>
+                </div>
 
-          <h3>Características principales</h3>
-          <ul>
-            <li>Gran variedad de especies y colores intensos</li>
-            <li>Requieren parámetros del agua muy estables</li>
-            <li>Mantenimiento más técnico y costoso</li>
-          </ul>
+                <div class="text_info">
+                  <h3>Características principales</h3>
+                  <ul class="textParrafo">
+                    <li>Gran variedad de especies y colores intensos</li>
+                    <li>Requieren parámetros del agua muy estables</li>
+                    <li>Mantenimiento más técnico y costoso</li>
+                  </ul>
+                </div>
 
-          <h3>Ejemplos de peces de agua salada</h3>
-          <ul>
-            <li>Pez payaso</li>
-            <li>Pez cirujano</li>
-            <li>Pez ángel</li>
-            <li>Damisela</li>
-            <li>Gobios</li>
-            <li>Blénidos</li>
-          </ul>
+                <div class="text_info">
+                  <h3>Ejemplos de peces de agua salada</h3>
+                  <ul class="textParrafo">
+                    <li>Pez payaso</li>
+                    <li>Pez cirujano</li>
+                    <li>Pez ángel</li>
+                    <li>Damisela</li>
+                    <li>Gobios</li>
+                    <li>Blénidos</li>
+                  </ul>
+                </div>
 
-          <h3>Requisitos básicos</h3>
-          <ul>
-            <li>Acuario marino específico</li>
-            <li>Sal marina de calidad</li>
-            <li>Control de salinidad, pH y temperatura</li>
-            <li>Iluminación adecuada</li>
-            <li>Filtro marino y skimmer (recomendado)</li>
-          </ul>
+                <div class="text_info">
+                  <h3>Requisitos básicos</h3>
+                  <ul class="textParrafo">
+                    <li>Acuario marino específico</li>
+                    <li>Sal marina de calidad</li>
+                    <li>Control de salinidad, pH y temperatura</li>
+                    <li>Iluminación adecuada</li>
+                    <li>Filtro marino y skimmer (recomendado)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="piePagina">
       <a href="https://www.instagram.com/" target="_blank"
         ><img src="../recursos/img/instagram-50.png" alt=""
       /></a>
@@ -160,5 +299,11 @@
         ><img src="../recursos/img/x-50.png" alt=""
       /></a>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
