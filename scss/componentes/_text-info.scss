@@ -1,0 +1,17 @@
+.text_info {
+  font-family: "Jost", sans-serif;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: left !important;
+  justify-content: center !important;
+  margin: 1rem !important;
+  .textParrafo {
+    text-align: left;
+    position: relative !important;
+    margin: 0.5rem !important;
+  }
+  .textParrafo ul {
+    list-style: none;
+  }
+}

@@ -1,0 +1,34 @@
+.producto {
+  width: 12rem;
+  position: relative;
+  background-color: #f0f0f0;
+
+  &__imagen {
+    width: 12rem;
+    height: 10rem;
+
+    &--foto {
+      width: 12rem;
+      height: 10rem;
+    }
+  }
+
+  &__titulo {
+    height: 3rem;
+    margin-bottom: 0;
+  }
+
+  &__precio {
+    color: green;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  &__boton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1.6rem;
+  }
+}

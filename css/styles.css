@@ -1,0 +1,164 @@
+html, body {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url("../recursos/img/fondo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* reset de css , siempre presente*/
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+h2, h3 {
+  color: blue !important;
+}
+
+h3 {
+  font-size: 1.3rem;
+  align-items: left;
+}
+
+.menuFont {
+  font-size: 1.5rem !important;
+}
+
+.producto {
+  width: 12rem;
+  position: relative;
+  background-color: #f0f0f0;
+}
+.producto__imagen {
+  width: 12rem;
+  height: 10rem;
+}
+.producto__imagen--foto {
+  width: 12rem;
+  height: 10rem;
+}
+.producto__titulo {
+  height: 3rem;
+  margin-bottom: 0;
+}
+.producto__precio {
+  color: green;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+.producto__boton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 1.6rem;
+}
+
+.logo {
+  margin: 1rem;
+  padding: 1rem;
+  margin-bottom: 0;
+}
+.logo h1 {
+  text-align: center;
+  color: red;
+  font-family: "BBH Bartle", sans-serif;
+}
+.logo img {
+  width: 4.5rem;
+  height: auto;
+}
+
+.contactanos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem !important;
+}
+.contactanos .formularioContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  width: 20rem !important;
+  grid-template-rows: auto;
+}
+.contactanos .formularioContacto .formularioContacto__campo {
+  display: flex;
+  align-items: center;
+}
+.contactanos .formularioContacto .formularioContacto__campo label {
+  width: 5rem;
+  text-align: left;
+}
+
+.text_info {
+  font-family: "Jost", sans-serif;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: left !important;
+  justify-content: center !important;
+  margin: 1rem !important;
+}
+.text_info .textParrafo {
+  text-align: left;
+  position: relative !important;
+  margin: 0.5rem !important;
+}
+.text_info .textParrafo ul {
+  list-style: none;
+}
+
+.accordion-item {
+  background-color: rgba(255, 255, 255, 0.1) !important; /* negro 60% */
+}
+
+.accordion-button {
+  background-color: rgba(0, 200, 255, 0.2) !important; /* negro 60% */
+}
+
+.piePagina {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+main {
+  text-align: center;
+  align-items: center;
+}
+
+.gridProductos {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(12rem, 1fr));
+  margin: 2rem;
+  gap: 1rem;
+  justify-content: center;
+  justify-items: center;
+}
+
+@media (max-width: 900px) {
+  .gridProductos {
+    grid-template-columns: repeat(2, minmax(12rem, 1fr));
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .gridProductos {
+    grid-template-columns: repeat(1, minmax(12rem, 1fr));
+  }
+}
+.menuFont {
+  font-size: 1.5rem !important;
+}
+
+/*# sourceMappingURL=styles.css.map */
