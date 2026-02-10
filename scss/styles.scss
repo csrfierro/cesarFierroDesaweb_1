@@ -2,7 +2,6 @@
 @use "./base/global";
 @use "./base/reset";
 @use "./base/tipografia";
-@use "./base/variables";
 
 // components
 @use "./componentes/botones";
@@ -25,3 +24,7 @@
 @use "./paginas/filtros";
 @use "./paginas/index";
 @use "./paginas/sobreNosotros";
+
+// utils
+@use "./utils/variables";
+@use "./utils/mixins";

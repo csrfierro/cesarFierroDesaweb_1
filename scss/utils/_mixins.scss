@@ -1,0 +1,18 @@
+@use "../utils/variables" as v;
+
+// Mixins boton
+@mixin boton {
+  position: absolute;
+  top: v.$producto__boton-top;
+  right: v.$producto__boton-right;
+  height: v.$producto__boton-height;
+  background-color: v.$producto__boton-background-color;
+}
+
+
+// responsive
+@mixin respond($bp) {
+  @media (max-width: map-get(v.$breakpoints, $bp)) {
+    @content;
+  }
+}

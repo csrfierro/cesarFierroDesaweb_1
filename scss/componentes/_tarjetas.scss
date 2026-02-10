@@ -1,34 +1,42 @@
+@use "../utils/variables" as v;
+@use "../utils/mixins" as m;
+
 .producto {
-  width: 12rem;
+  width: v.$producto-width;
   position: relative;
-  background-color: #f0f0f0;
+  background-color: v.$producto-background-color;
+  
 
   &__imagen {
-    width: 12rem;
-    height: 10rem;
+    width: v.$producto__imagen-width;
+    height: v.$producto__imagen-height;
 
     &--foto {
-      width: 12rem;
-      height: 10rem;
+      width: v.$producto__imagen--foto-width;
+      height: v.$producto__imagen--foto-height;
     }
   }
 
   &__titulo {
-    height: 3rem;
+    height: v.$producto__titulo-height;
     margin-bottom: 0;
   }
 
   &__precio {
-    color: green;
-    font-weight: bold;
-    font-size: 1.2rem;
+    color: v.$producto__precio-color;
+    font-weight: v.$producto__precio-font-weight;
+    font-size: v.$producto__precio-font-size;
     margin-bottom: 0;
   }
 
   &__boton {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 1.6rem;
+    @include m.boton;
+  }
+
+&:hover {
+  transform-origin: center; /* punto de origen para la transformación */
+transform: scale(1.2); /* aumenta 1.5 en ambos ejes */
+transition: all 0.3s ease; /* transición suave */
+z-index: 10;
   }
 }

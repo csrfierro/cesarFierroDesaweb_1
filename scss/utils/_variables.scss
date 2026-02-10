@@ -1,0 +1,21 @@
+// Variables para el componente de tarjetas de productos
+$producto-background-color: #f0f0f0;
+$producto-width: 12rem;
+$producto__imagen-width: 12rem;
+$producto__imagen-height: 10rem;
+$producto__imagen--foto-width: 12rem;
+$producto__imagen--foto-height: 10rem;
+$producto__titulo-height: 3rem;
+$producto__precio-color: green;
+$producto__precio-font-weight: bold;
+$producto__precio-font-size: 1.2rem;
+$producto__boton-background-color: rgba(255, 255, 255, 0.711);
+$producto__boton-top: 0;
+$producto__boton-right: 0;
+$producto__boton-height: 1.6rem;
+
+// responsive breakpoints
+$breakpoints: (
+  tablet: 900px,
+  mobile: 576px
+);

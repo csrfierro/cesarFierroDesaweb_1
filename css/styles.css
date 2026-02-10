@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body {
   min-width: 320px;
   overflow-x: hidden;
@@ -58,6 +59,13 @@ h3 {
   top: 0;
   right: 0;
   height: 1.6rem;
+  background-color: rgba(255, 255, 255, 0.711);
+}
+.producto:hover {
+  transform-origin: center; /* punto de origen para la transformación */
+  transform: scale(1.2); /* aumenta 1.5 en ambos ejes */
+  transition: all 0.3s ease; /* transición suave */
+  z-index: 10;
 }
 
 .logo {
@@ -146,6 +154,9 @@ main {
   justify-items: center;
 }
 
+.gridProductos {
+  display: grid;
+}
 @media (max-width: 900px) {
   .gridProductos {
     grid-template-columns: repeat(2, minmax(12rem, 1fr));
@@ -156,9 +167,6 @@ main {
   .gridProductos {
     grid-template-columns: repeat(1, minmax(12rem, 1fr));
   }
-}
-.menuFont {
-  font-size: 1.5rem !important;
 }
 
 /*# sourceMappingURL=styles.css.map */
