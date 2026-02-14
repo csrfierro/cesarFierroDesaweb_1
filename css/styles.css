@@ -1,0 +1,193 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Jost:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap");
+html, body {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url("../recursos/img/fondo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* reset de css , siempre presente*/
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+h2, h3 {
+  color: blue !important;
+}
+
+h3 {
+  font-size: 1.3rem;
+  align-items: left;
+}
+
+a.nav-link.menuFont {
+  font-size: 1.4rem !important;
+}
+
+.producto {
+  width: 12rem;
+  position: relative;
+  background-color: #f0f0f0;
+  border-radius: 0% 0% 5% 5%;
+}
+.producto__imagen {
+  width: auto;
+  height: auto;
+}
+.producto__imagen--foto {
+  width: 12rem;
+  height: 12rem;
+}
+.producto__titulo {
+  height: 3rem;
+  margin-bottom: 0;
+}
+.producto__precio {
+  color: green;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+.producto__boton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 1.6rem;
+  background-color: rgba(57, 110, 255, 0.596);
+  border-radius: 12% 0% 12% 12%;
+  border: none;
+}
+.producto__boton:hover {
+  background-color: rgba(21, 190, 21, 0.819);
+  transform: scale(1.2);
+  transform-origin: right top;
+}
+.producto:hover {
+  transform-origin: center;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.logo {
+  margin: 1rem;
+  padding: 1rem;
+  margin-bottom: 0;
+}
+.logo h1 {
+  text-align: center;
+  color: red;
+  font-family: "BBH Bartle", sans-serif;
+}
+.logo img {
+  width: 4.5rem;
+  height: auto;
+}
+
+.contactanos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem !important;
+}
+.contactanos .formularioContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  width: 20rem !important;
+  grid-template-rows: auto;
+}
+.contactanos .formularioContacto .formularioContacto__campo {
+  display: flex;
+  align-items: center;
+}
+.contactanos .formularioContacto .formularioContacto__campo label {
+  width: 5rem;
+  text-align: left;
+}
+.contactanos .formularioContacto .formularioContacto__campo input:valid {
+  border: 2px solid #00ff1a;
+}
+.contactanos .formularioContacto .formularioContacto__campo input:invalid {
+  border: 2px solid red;
+}
+
+.text_info {
+  font-family: "Jost", sans-serif;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: left !important;
+  justify-content: center !important;
+  margin: 1rem !important;
+}
+.text_info .textParrafo {
+  text-align: left;
+  position: relative !important;
+  margin: 0.5rem !important;
+}
+.text_info .textParrafo ul {
+  list-style: none;
+}
+
+.accordion-item {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.accordion-button {
+  background-color: rgba(0, 200, 255, 0.2) !important;
+}
+
+.indice {
+  list-style: none;
+  padding: 0;
+  margin: 2rem;
+  display: flex;
+  gap: 1rem; /* Espacio entre los elementos del índice */
+  justify-content: center;
+  gap: 1rem;
+}
+.indice a {
+  color: inherit; /* Mantiene el color del texto del enlace */
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .indice {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.piePagina {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+main {
+  text-align: center;
+  align-items: center;
+}
+
+.gridProductos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  margin: 2rem;
+  gap: 1.5rem;
+  justify-content: center;
+  justify-items: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

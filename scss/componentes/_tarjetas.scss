@@ -1,0 +1,43 @@
+@use "../utils/variables" as v;
+@use "../utils/mixins" as m;
+
+.producto {
+  width: v.$producto-width;
+  position: relative;
+  background-color: v.$producto-background-color;
+  border-radius: 0% 0% 5% 5%;
+
+  &__imagen {
+    width: v.$producto__imagen-width;
+    height: v.$producto__imagen-height;
+
+    &--foto {
+      width: v.$producto__imagen--foto-width;
+      height: v.$producto__imagen--foto-height;
+    }
+  }
+
+  &__titulo {
+    height: v.$producto__titulo-height;
+    margin-bottom: 0;
+  }
+
+  &__precio {
+    color: v.$producto__precio-color;
+    font-weight: v.$producto__precio-font-weight;
+    font-size: v.$producto__precio-font-size;
+    margin-bottom: 0;
+  }
+
+  &__boton {
+    @include m.boton;
+    @include m.boton-hover;
+  }
+
+  &:hover {
+    transform-origin: center;
+    transform: scale(1.2); 
+    transition: all 0.3s ease; 
+    z-index: 10;
+  }
+}

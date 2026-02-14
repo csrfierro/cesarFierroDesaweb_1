@@ -1,0 +1,26 @@
+@use "../utils/mixins" as mx;
+
+.indice {
+  // position: sticky;
+  // top: 0;
+  // z-index: 100;
+  list-style: none;
+  padding: 0;
+  margin: 2rem;
+  display: flex;
+  gap: 1rem; /* Espacio entre los elementos del índice */
+  justify-content: center;
+  gap: 1rem;
+
+  a {
+    color: inherit; /* Mantiene el color del texto del enlace */
+    text-decoration: none;
+  }
+}
+
+.indice {
+  @include mx.respond(mobile) {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

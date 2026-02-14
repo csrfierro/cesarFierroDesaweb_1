@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Acuario</title>
-    <link rel="stylesheet" href="./css/estilos.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Jost:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap");
-    </style>
+    <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -31,7 +28,7 @@
         </div>
       </div>
 
-      <nav class="navbar navbar-expand-sm">
+      <nav class="navbar navbar-expand-sm navMenu">
         <div class="container-sm">
           <button
             class="navbar-toggler"
@@ -88,7 +85,7 @@
                 <div class="producto__imagen">
                   <img
                     class="producto__imagen--foto"
-                    src="./recursos/img/Apistograma Borellii - PAREJA.png"
+                    src="./recursos/img/apistograma-borellii.png"
                     alt=""
                   />
                 </div>
@@ -101,7 +98,7 @@
                 <div class="producto__imagen">
                   <img
                     class="producto__imagen--foto"
-                    src="./recursos/img/Chihiros B30 Shade con espejo (no incluye pantalla).png"
+                    src="./recursos/img/chihiros-b30-shade.png"
                     alt=""
                   />
                 </div>
@@ -114,7 +111,7 @@
                 <div class="producto__imagen">
                   <img
                     class="producto__imagen--foto"
-                    src="./recursos/img/Caridina Japonica XL Come Algas.png"
+                    src="./recursos/img/caridina-japonica-xl.png"
                     alt=""
                   />
                 </div>
@@ -127,7 +124,7 @@
                 <div class="producto__imagen">
                   <img
                     class="producto__imagen--foto"
-                    src="./recursos/img/Caridina Pinocho M Come Algas.png"
+                    src="./recursos/img/caridina-pinocho-m.png"
                     alt=""
                   />
                 </div>
@@ -166,6 +163,7 @@
                 <p class="producto__precio">$120.99</p>
                 <button class="producto__boton">Carrito</button>
               </article>
+
               <article class="producto">
                 <div class="producto__imagen">
                   <img
@@ -194,6 +192,7 @@
               </article>
             </div>
           </div>
+
           <div>
             <h2>Destacados</h2>
             <div class="gridProductos">
@@ -201,7 +200,7 @@
                 <div class="producto__imagen">
                   <img
                     class="producto__imagen--foto"
-                    src="./recursos/img/Caracol Bicolor Rabbit Snail.png"
+                    src="./recursos/img/caracol-bicolor-rabbit.png"
                     alt=""
                   />
                 </div>
@@ -214,7 +213,7 @@
                 <div class="producto__imagen">
                   <img
                     class="producto__imagen--foto"
-                    src="./recursos/img/Pez Disco Leopard Premium 7 cm.png"
+                    src="./recursos/img/disco-leopard-premium.png"
                     alt=""
                   />
                 </div>
@@ -227,7 +226,7 @@
                 <div class="producto__imagen">
                   <img
                     class="producto__imagen--foto"
-                    src="./recursos/img/Fluval Filtro 307.png"
+                    src="./recursos/img/fluval-307.png"
                     alt=""
                   />
                 </div>
@@ -240,7 +239,7 @@
                 <div class="producto__imagen">
                   <img
                     class="producto__imagen--foto"
-                    src="./recursos/img/Aulonocara Dragón Sangre - Aulonocara sp.png"
+                    src="./recursos/img/aulonocara-dragon.png"
                     alt=""
                   />
                 </div>
@@ -302,33 +301,33 @@
         <h2>Contactanos</h2>
         <form class="formularioContacto" action="/submit" method="post">
           <div class="formularioContacto__campo">
-            <label for="">Email</label>
+            <label for="email">Email</label>
             <input type="email" name="emailIn" id="email" />
           </div>
 
           <div class="formularioContacto__campo">
-            <label for="">Nombre</label>
-            <input type="text" name="nombreIn" id="nombre" />
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombreIn" id="nombre" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,}"/>
           </div>
 
           <div class="formularioContacto__campo">
-            <label for="">Apellido</label>
-            <input type="text" name="apellidoIn" id="apellido" />
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellidoIn" id="apellido" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,}"/>
           </div>
 
           <div class="formularioContacto__campo">
-            <label for="">Celular</label>
-            <input type="number" name="celularIn" id="celular" />
+            <label for="celular">Celular</label>
+            <input type="tel" name="celularIn" id="celular" placeholder="099123456" maxlength="9" minlength="9"/>
           </div>
 
           <div class="formularioContacto__campo">
-            <label for="">Mensaje</label>
-            <textarea name="areaText" id="Mensaje"></textarea>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensajeIn" id="mensaje"></textarea>
           </div>
 
           <div class="formularioContacto__campo">
-            <label for="">Motivo de contacto</label>
-            <select>
+            <label for="motivoContacto">Motivo de contacto</label>
+            <select name="motivoContacto" id="motivoContacto">
               <option class="opciones">Consulta</option>
               <option class="opciones">Compra</option>
               <option class="opciones">Reclamo</option>

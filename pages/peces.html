@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Acuario</title>
-    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Jost:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap");
     </style>
@@ -19,7 +19,7 @@
         <div
           class="logo__imagen col-2 col-sm-1 d-flex justify-content-center align-items-center"
         >
-          <a href="./index.html"
+          <a href="../index.html"
             ><img src="../recursos/img/logo.png" alt=""
           /></a>
         </div>
@@ -52,7 +52,9 @@
                 <a class="nav-link menuFont" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active menuFont" href=""><strong>Peces</strong></a>
+                <a class="nav-link active menuFont" href=""
+                  ><strong>Peces</strong></a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link menuFont" href="./acuarios.html">Acuarios</a>
@@ -72,31 +74,194 @@
     </header>
 
     <main>
-      <nav>
-        <ul>
-          <li><a href="">Todo</a></li>
-          <li><a href="">Agua fría</a></li>
-          <li><a href="">Agua templada</a></li>
-          <li><a href="">Agua salada</a></li>
+      
+        <ul class="indice">
+          <li><a href="#aguaFria">Agua fría</a></li>
+          <li><a href="#aguaTemplada">Agua templada</a></li>
+          <li><a href="#aguaSalada">Agua salada</a></li>
+          <li><a href="#infoRelevante">Información relevante</a></li>
         </ul>
-      </nav>
-      <section class="contenido">
-        <div
-          class="alert alert-warning alert-dismissible fade show"
-          role="alert"
-        >
-          <strong>Atención!</strong> En esta zona deberian aparecer los
-          articulos dependiendo de lo que se seleccione en el menú de arriba.
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="alert"
-            aria-label="Close"
-          ></button>
+      
+      <section>
+        <div class="contenidos">
+          <div id="aguaFria">
+            <h2>Peces aguas fría</h2>
+            <div class="gridProductos">
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/carassius-auratus-celestial-eye-miracielos-nascapers-online.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Miracielos | Carassius Auratus</p>
+                <p class="producto__precio">$350.00</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/oranda-azul-carassius-auratus-nascapers-online.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Oranda Azul | Carassius Auratus</p>
+                <p class="producto__precio">$350.00</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/oranda-telescopio-panda.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">
+                  Oranda Telescopio Panda | Carassius auratus
+                </p>
+                <p class="producto__precio">$259.00</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/orfre-dorado-leuciscus-idus-acuarios-nascapers-online.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Orfre Dorado | Leuciscus idus</p>
+                <p class="producto__precio">$299.00</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+            </div>
+          </div>
+
+          <div id="aguaTemplada">
+            <h2>Peces aguas templada</h2>
+            <div class="gridProductos">
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/disco-leopard-premium.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Pez Disco Leopard Premium 7 cm</p>
+                <p class="producto__precio">$120.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/Puntius-titteya-ladies.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Puntius titteya ladies</p>
+                <p class="producto__precio">$290.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/pez-platy-nascapers-online.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Xiphophorus maculatus (Platy)</p>
+                <p class="producto__precio">$120.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/neon-tetra-fish.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">
+                  Neon Tetra (Paracheirodon innesi)
+                </p>
+                <p class="producto__precio">$149.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+            </div>
+          </div>
+
+          <div id="aguaSalada">
+            <h2>Peces aguas salada</h2>
+            <div class="gridProductos">
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/chaetodon-ephippium-mariposa.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Chaetodon Ephippium (Mariposa)</p>
+                <p class="producto__precio">$890.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/acanthurus-leucosternon-leuco.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Acanthurus Leucosternon (Leuco)</p>
+                <p class="producto__precio">$1120.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/pterois-miles-pez-leon.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Pterois miles (Pez León)</p>
+                <p class="producto__precio">$2120.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/chtysiptera-hemicyanea-azul.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Chtysiptera Hemicyanea (Azul)</p>
+                <p class="producto__precio">$750.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section>
+      <section id="infoRelevante">
         <h2>Información Relevante</h2>
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">

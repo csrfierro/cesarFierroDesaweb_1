@@ -1,0 +1,5 @@
+@use "../utils/variables" as v;
+
+a.nav-link.menuFont {
+  font-size: v.$menuFuenteSize !important;
+}

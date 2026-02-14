@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Acuario</title>
-    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Jost:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap");
     </style>
@@ -13,16 +13,18 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
     />
   </head>
+
   <body class="container-xxl">
     <header>
       <div class="logo row justify-content-center">
         <div
           class="logo__imagen col-2 col-sm-1 d-flex justify-content-center align-items-center"
         >
-          <a href="./index.html"
-            ><img src="../recursos/img/logo.png" alt=""
-          /></a>
+          <a href="../index.html">
+            <img src="../recursos/img/logo.png" alt="" />
+          </a>
         </div>
+
         <div
           class="col-12 col-sm-5 d-flex justify-content-center justify-content-sm-start align-items-center"
         >
@@ -37,12 +39,10 @@
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div
             class="collapse navbar-collapse justify-content-center"
             id="navbarNav"
@@ -55,15 +55,17 @@
                 <a class="nav-link menuFont" href="./peces.html">Peces</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active menuFont" href=""><strong>Acuarios</strong></a>
+                <a class="nav-link active menuFont" href="">
+                  <strong>Acuarios</strong>
+                </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link menuFont" href="./filtros.html">Filtros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link menuFont" href="./sobreNosotros.html"
-                  >Sobre nosotros</a
-                >
+                <a class="nav-link menuFont" href="./sobreNosotros.html">
+                  Sobre nosotros
+                </a>
               </li>
             </ul>
           </div>
@@ -72,34 +74,190 @@
     </header>
 
     <main>
-      <nav>
-        <ul>
-          <li><a href="">Todo</a></li>
-          <li><a href="">Acuarios completos</a></li>
-          <li><a href="">Acuarios plantados</a></li>
-          <li><a href="">Vacíos</a></li>
-        </ul>
-      </nav>
+      <ul class="indice">
+        <li><a href="#acCompletos">Acuarios completos</a></li>
+        <li><a href="#acPlantados">Acuarios plantados</a></li>
+        <li><a href="#acVacios">Vacíos</a></li>
+        <li><a href="#infoRelevante">Información relevante</a></li>
+      </ul>
 
-      <section class="contenido">
-        <div
-          class="alert alert-warning alert-dismissible fade show"
-          role="alert"
-        >
-          <strong>Atención!</strong> En esta zona deberian aparecer los
-          articulos dependiendo de lo que se seleccione en el menú de arriba.
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="alert"
-            aria-label="Close"
-          ></button>
+      <section>
+        <div class="contenido">
+          <div id="acCompletos">
+            <h2>Acuarios completos</h2>
+            <div class="gridProductos">
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/pack-pecera-curva-ta-21l-completa-e-iluminación.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Pack Pecera 21 litros completa</p>
+                <p class="producto__precio">$2499.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/pack-pecera-ps-15-litros-completa-para-betta.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Pack Pecera 15 litros completa</p>
+                <p class="producto__precio">$2120.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/pecera-completa-cubo-42l-tropical-simple-.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Pack Pecera 42 litros completa</p>
+                <p class="producto__precio">$3310.00</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/pack-pecera-sf-96l-completa-simple.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Pack Pecera 96 litros completa</p>
+                <p class="producto__precio">$5210.00</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+            </div>
+          </div>
+
+          <div id="acPlantados">
+            <h2>Acuarios plantados</h2>
+            <div class="gridProductos">
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/plantado-150l.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Pack acuario plantado 150 litros</p>
+                <p class="producto__precio">$12290.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/plantado-200L.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Pack acuario plantado 200 litros</p>
+                <p class="producto__precio">$15120.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/plantado-300L.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Pack acuario plantado 300 litros</p>
+                <p class="producto__precio">$18100.00</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/plantado-400l.png"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Pack acuario plantado 400 litros</p>
+                <p class="producto__precio">$23149.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+            </div>
+          </div>
+          
+          <div id="acVacios">
+            <h2>Vacíos</h2>
+            <div class="gridProductos">
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/pecera-sv-vacía-de-24-litros.jpg"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Pecera vacía 24 litros</p>
+                <p class="producto__precio">$1590.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/pecera-sv-vacía-de-96-litros.jpg"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Pecera vacía 96 litros</p>
+                <p class="producto__precio">$2120.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/pecera-sv-vacía-de-120-litros.jpg"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Pecera vacía 120 litros</p>
+                <p class="producto__precio">$2500.00</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+
+              <article class="producto">
+                <div class="producto__imagen">
+                  <img
+                    class="producto__imagen--foto"
+                    src="../recursos/img/pecera-sv-vacía-de-150-litros.jpg"
+                    alt=""
+                  />
+                </div>
+                <p class="producto__titulo">Pecera vacía 150 litros</p>
+                <p class="producto__precio">$690.99</p>
+                <button class="producto__boton">Carrito</button>
+              </article>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section>
+      <section id="infoRelevante">
         <h2>Información Relevante</h2>
         <div class="accordion" id="accordionExample">
+          <!-- ACORDEON 1 -->
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button
@@ -113,88 +271,88 @@
                 Acuarios completos
               </button>
             </h2>
+
             <div
               id="collapseOne"
               class="accordion-collapse collapse"
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-<div class="text_info">
-          <p class="textParrafo">
-            Un acuario completo es aquel que incluye todos los elementos básicos
-            para mantener peces de forma saludable. Es la opción más elegida
-            para quienes se inician en la acuariofilia.
-          </p>
-        </div>
-
-        <div class="text_info">
-          <h3>Acuario</h3>
-          <p class="textParrafo">
-            Es el recipiente de vidrio o acrílico que contiene el agua, los
-            peces y la decoración. Los tamaños más comunes van desde 40 a 110
-            litros. A mayor volumen, más estabilidad en los parámetros del agua.
-          </p>
-        </div>
-
-        <div class="text_info">
-          <h3>Filtro</h3>
-          <p class="textParrafo">
-            El filtro es el corazón del acuario. Su función es:
-          </p>
-          <ul class="textParrafo">
-            <li>Eliminar residuos</li>
-            <li>Mantener el agua clara</li>
-            <li>Alojar bacterias beneficiosas</li>
-          </ul>
-        </div>
-
-        <div class="text_info">
-          <p class="textParrafo">Tipos más comunes:</p>
-          <ul class="textParrafo">
-            <li>Filtro interno: sencillo y económico</li>
-            <li>
-              Filtro externo (canister): más eficiente y recomendado para
-              acuarios medianos y grandes
-            </li>
-          </ul>
-        </div>
-
-        <div class="text_info">
-          <h3>Material filtrante</h3>
-          <p class="textParrafo">
-            Dentro del filtro se colocan distintos materiales:
-          </p>
-          <ul class="textParrafo">
-            <li>Filtración mecánica: esponjas o perlón</li>
-            <li>
-              Filtración biológica: canutillos cerámicos, matrix, biobolas
-            </li>
-            <li>Filtración química (opcional): carbón activado</li>
-          </ul>
-        </div>
-
-        <div class="text_info">
-          <h3>Sustrato</h3>
-          <p class="textParrafo">
-            En acuarios solo con peces suele utilizarse:
-          </p>
-          <ul class="textParrafo">
-            <li>Grava</li>
-            <li>Arena</li>
-            <li>Canto rodado</li>
-          </ul>
-        </div>
-
-        <div class="text_info">
-          <p class="textParrafo">
-            Su función es principalmente estética y no aporta nutrientes. Este
-            tipo de acuario no requiere iluminación especial ni abonado, solo
-            mantenimiento regular y cambios de agua.
-          </p>
-        </div>
+                <div class="text_info">
+                  <p class="textParrafo">
+                    Un acuario completo es aquel que incluye todos los elementos
+                    básicos para mantener peces de forma saludable. Es la opción
+                    más elegida para quienes se inician en la acuariofilia.
+                  </p>
+                </div>
+                <div class="text_info">
+                  <h3>Acuario</h3>
+                  <p class="textParrafo">
+                    Es el recipiente de vidrio o acrílico que contiene el agua,
+                    los peces y la decoración. Los tamaños más comunes van desde
+                    40 a 110 litros. A mayor volumen, más estabilidad en los
+                    parámetros del agua.
+                  </p>
+                </div>
+                <div class="text_info">
+                  <h3>Filtro</h3>
+                  <p class="textParrafo">
+                    El filtro es el corazón del acuario. Su función es:
+                  </p>
+                  <ul class="textParrafo">
+                    <li>Eliminar residuos</li>
+                    <li>Mantener el agua clara</li>
+                    <li>Alojar bacterias beneficiosas</li>
+                  </ul>
+                </div>
+                <div class="text_info">
+                  <p class="textParrafo">Tipos más comunes:</p>
+                  <ul class="textParrafo">
+                    <li>Filtro interno: sencillo y económico</li>
+                    <li>
+                      Filtro externo (canister): más eficiente y recomendado
+                      para acuarios medianos y grandes
+                    </li>
+                  </ul>
+                </div>
+                <div class="text_info">
+                  <h3>Material filtrante</h3>
+                  <p class="textParrafo">
+                    Dentro del filtro se colocan distintos materiales:
+                  </p>
+                  <ul class="textParrafo">
+                    <li>Filtración mecánica: esponjas o perlón</li>
+                    <li>
+                      Filtración biológica: canutillos cerámicos, matrix,
+                      biobolas
+                    </li>
+                    <li>Filtración química (opcional): carbón activado</li>
+                  </ul>
+                </div>
+                <div class="text_info">
+                  <h3>Sustrato</h3>
+                  <p class="textParrafo">
+                    En acuarios solo con peces suele utilizarse:
+                  </p>
+                  <ul class="textParrafo">
+                    <li>Grava</li>
+                    <li>Arena</li>
+                    <li>Canto rodado</li>
+                  </ul>
+                </div>
+                <div class="text_info">
+                  <p class="textParrafo">
+                    Su función es principalmente estética y no aporta
+                    nutrientes. Este tipo de acuario no requiere iluminación
+                    especial ni abonado, solo mantenimiento regular y cambios de
+                    agua.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+
+          <!-- ACORDEON 2 -->
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button
@@ -208,133 +366,124 @@
                 Acuarios plantados (low tech)
               </button>
             </h2>
+
             <div
               id="collapseTwo"
               class="accordion-collapse collapse"
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-<div class="text_info">
-          <p class="textParrafo">
-            Un acuario plantado low tech combina peces y plantas naturales sin
-            sistemas complejos como CO₂ presurizado. Es ideal para quienes
-            quieren un acuario natural y fácil de mantener.
-          </p>
-        </div>
-
-        <div class="text_info">
-          <h3>Acuario</h3>
-          <p class="textParrafo">
-            Similar al acuario completo, aunque se recomienda un volumen medio o
-            grande para facilitar el equilibrio del sistema.
-          </p>
-        </div>
-
-        <div class="text_info">
-          <h3>Filtro</h3>
-          <p class="textParrafo">Preferentemente:</p>
-          <ul class="textParrafo">
-            <li>Filtro externo (canister)</li>
-            <li>Buen caudal sin generar corrientes fuertes</li>
-          </ul>
-        </div>
-
-        <div class="text_info">
-          <h3>Material filtrante</h3>
-          <p class="textParrafo">
-            Muy importante en acuarios plantados. Las bacterias ayudan a
-            procesar nutrientes que luego aprovechan las plantas.
-          </p>
-          <ul class="textParrafo">
-            <li>Esponja (mecánica)</li>
-            <li>Material biológico de calidad</li>
-          </ul>
-        </div>
-
-        <div class="text_info">
-          <h3>Sustrato nutritivo</h3>
-          <p class="textParrafo">Opciones:</p>
-          <ul class="textParrafo">
-            <li>Sustrato nutritivo comercial</li>
-            <li>Sustrato inerte + cápsulas nutritivas</li>
-          </ul>
-        </div>
-
-        <div class="text_info">
-          <h3>Iluminación</h3>
-          <ul class="textParrafo">
-            <li>Iluminación media</li>
-            <li>Fotoperíodo de 6 a 8 horas</li>
-          </ul>
-          <p class="textParrafo">
-            Una luz excesiva puede generar algas si no se acompaña con buen
-            equilibrio.
-          </p>
-        </div>
-
-        <div class="text_info">
-          <h3>Plantas básicas para low tech</h3>
-          <ul class="textParrafo">
-            <li>Anubias</li>
-            <li>Helecho de Java</li>
-            <li>Bacopa caroliniana</li>
-            <li>Vallisneria</li>
-            <li>Sagittaria subulata</li>
-            <li>Cryptocoryne</li>
-            <li>Elodea</li>
-            <li>Marsilea</li>
-          </ul>
-        </div>
-
-        <div class="text_info">
-          <p class="textParrafo">Estas plantas ayudan a:</p>
-          <ul class="textParrafo">
-            <li>Consumir nutrientes</li>
-            <li>Oxigenar el agua</li>
-            <li>Reducir algas</li>
-          </ul>
-        </div>
-
-        <div class="text_info">
-          <h3>Abonado básico (low tech)</h3>
-          <p class="textParrafo">
-            El abonado debe ser moderado y generalmente incluye:
-          </p>
-          <ul class="textParrafo">
-            <li>Potasio (K)</li>
-            <li>Nitrógeno (NO₃) y fósforo (PO₄) en bajas dosis</li>
-            <li>Micronutrientes (hierro y trazas)</li>
-          </ul>
-        </div>
-
-        <div class="text_info">
-          <p class="textParrafo">
-            En muchos casos, los nutrientes generados por los peces son
-            suficientes y solo se complementa con abonado líquido semanal en
-            dosis bajas.
-          </p>
-        </div>
+                <div class="text_info">
+                  <p class="textParrafo">
+                    Un acuario plantado low tech combina peces y plantas
+                    naturales sin sistemas complejos como CO₂ presurizado. Es
+                    ideal para quienes quieren un acuario natural y fácil de
+                    mantener.
+                  </p>
+                </div>
+                <div class="text_info">
+                  <h3>Acuario</h3>
+                  <p class="textParrafo">
+                    Similar al acuario completo, aunque se recomienda un volumen
+                    medio o grande para facilitar el equilibrio del sistema.
+                  </p>
+                </div>
+                <div class="text_info">
+                  <h3>Filtro</h3>
+                  <p class="textParrafo">Preferentemente:</p>
+                  <ul class="textParrafo">
+                    <li>Filtro externo (canister)</li>
+                    <li>Buen caudal sin generar corrientes fuertes</li>
+                  </ul>
+                </div>
+                <div class="text_info">
+                  <h3>Material filtrante</h3>
+                  <p class="textParrafo">
+                    Muy importante en acuarios plantados. Las bacterias ayudan a
+                    procesar nutrientes que luego aprovechan las plantas.
+                  </p>
+                  <ul class="textParrafo">
+                    <li>Esponja (mecánica)</li>
+                    <li>Material biológico de calidad</li>
+                  </ul>
+                </div>
+                <div class="text_info">
+                  <h3>Sustrato nutritivo</h3>
+                  <p class="textParrafo">Opciones:</p>
+                  <ul class="textParrafo">
+                    <li>Sustrato nutritivo comercial</li>
+                    <li>Sustrato inerte + cápsulas nutritivas</li>
+                  </ul>
+                </div>
+                <div class="text_info">
+                  <h3>Iluminación</h3>
+                  <ul class="textParrafo">
+                    <li>Iluminación media</li>
+                    <li>Fotoperíodo de 6 a 8 horas</li>
+                  </ul>
+                  <p class="textParrafo">
+                    Una luz excesiva puede generar algas si no se acompaña con
+                    buen equilibrio.
+                  </p>
+                </div>
+                <div class="text_info">
+                  <h3>Plantas básicas para low tech</h3>
+                  <ul class="textParrafo">
+                    <li>Anubias</li>
+                    <li>Helecho de Java</li>
+                    <li>Bacopa caroliniana</li>
+                    <li>Vallisneria</li>
+                    <li>Sagittaria subulata</li>
+                    <li>Cryptocoryne</li>
+                    <li>Elodea</li>
+                    <li>Marsilea</li>
+                  </ul>
+                </div>
+                <div class="text_info">
+                  <p class="textParrafo">Estas plantas ayudan a:</p>
+                  <ul class="textParrafo">
+                    <li>Consumir nutrientes</li>
+                    <li>Oxigenar el agua</li>
+                    <li>Reducir algas</li>
+                  </ul>
+                </div>
+                <div class="text_info">
+                  <h3>Abonado básico (low tech)</h3>
+                  <p class="textParrafo">
+                    El abonado debe ser moderado y generalmente incluye:
+                  </p>
+                  <ul class="textParrafo">
+                    <li>Potasio (K)</li>
+                    <li>Nitrógeno (NO₃) y fósforo (PO₄) en bajas dosis</li>
+                    <li>Micronutrientes (hierro y trazas)</li>
+                  </ul>
+                </div>
+                <div class="text_info">
+                  <p class="textParrafo">
+                    En muchos casos, los nutrientes generados por los peces son
+                    suficientes y solo se complementa con abonado líquido
+                    semanal en dosis bajas.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        
+        </div>
       </section>
     </main>
+
     <footer class="piePagina">
-      <a href="https://www.instagram.com/" target="_blank"
-        ><img src="../recursos/img/instagram-50.png" alt=""
-      /></a>
-      <a href="https://www.youtube.com/" target="_blank"
-        ><img src="../recursos/img/youtube-50.png" alt=""
-      /></a>
-      <a href="https://x.com/" target="_blank"
-        ><img src="../recursos/img/x-50.png" alt=""
-      /></a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="../recursos/img/instagram-50.png" alt="" />
+      </a>
+      <a href="https://www.youtube.com/" target="_blank">
+        <img src="../recursos/img/youtube-50.png" alt="" />
+      </a>
+      <a href="https://x.com/" target="_blank">
+        <img src="../recursos/img/x-50.png" alt="" />
+      </a>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

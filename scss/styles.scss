@@ -1,0 +1,30 @@
+// base
+@use "./base/global";
+@use "./base/reset";
+@use "./base/tipografia";
+
+// components
+@use "./componentes/navbar";
+@use "./componentes/tarjetas";
+@use "./componentes/logo";
+@use "./componentes/formularios";
+@use "./componentes/text-info";
+@use "./componentes/acordeon";
+@use "./componentes/indiceMenu";
+
+// layout
+@use "./layout/footer";
+@use "./layout/main";
+@use "./layout/grid";
+@use "./layout/header";
+
+// paginas
+@use "./paginas/acuarios";
+@use "./paginas/peces";
+@use "./paginas/filtros";
+@use "./paginas/index";
+@use "./paginas/sobreNosotros";
+
+// utils
+@use "./utils/variables";
+@use "./utils/mixins";

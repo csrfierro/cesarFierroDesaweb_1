@@ -1,0 +1,15 @@
+html, body {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url("../recursos/img/fondo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+// * {
+//   outline: 1px solid red;
+// }
