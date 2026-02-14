@@ -1,5 +1,7 @@
 @use "../utils/variables" as v;
 
+
+
 // Mixins boton
 @mixin boton {
   position: absolute;
@@ -7,6 +9,15 @@
   right: v.$producto__boton-right;
   height: v.$producto__boton-height;
   background-color: v.$producto__boton-background-color;
+  border-radius: v.$producto-boton-border-radius;
+  border: none;
+}
+@mixin boton-hover {
+  &:hover {
+    background-color: v.$producto-boton-color-hover;
+    transform: scale(v.$producto-boton-scale-hover);
+    transform-origin: v.$producto-boton-transform-origin-hover;
+  }
 }
 
 

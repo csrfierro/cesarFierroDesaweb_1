@@ -2,31 +2,9 @@
 
 .gridProductos {
   display: grid;
-  grid-template-columns: repeat(4, minmax(12rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   margin: 2rem;
-  gap: 1rem;
+  gap: 1.5rem;
   justify-content: center;
   justify-items: center;
 }
-
-
-.gridProductos {
-  display: grid;
- @include mx.respond(tablet) {
-    grid-template-columns: repeat(2, minmax(12rem, 1fr));
-    gap: 1.5rem;
-  }
-  @include mx.respond(mobile) {
-    grid-template-columns: repeat(1, minmax(12rem, 1fr));
-  }
-}
-
-
-// realmente lo que escribimos es
-// .gridProductos {
-//   @include mx.respond(tablet) {
-//     grid-template-columns: repeat(2, minmax(12rem, 1fr));
-//     gap: 1.5rem;
-//   }
-// }
-// pero como es un mixin, se "traduce" a lo que se muestra en el bloque de código anterior

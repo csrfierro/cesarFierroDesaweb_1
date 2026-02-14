@@ -4,13 +4,13 @@
 @use "./base/tipografia";
 
 // components
-@use "./componentes/botones";
 @use "./componentes/navbar";
 @use "./componentes/tarjetas";
 @use "./componentes/logo";
 @use "./componentes/formularios";
 @use "./componentes/text-info";
 @use "./componentes/acordeon";
+@use "./componentes/indiceMenu";
 
 // layout
 @use "./layout/footer";

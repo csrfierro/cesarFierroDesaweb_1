@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Jost:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap");
 html, body {
   min-width: 320px;
   overflow-x: hidden;
@@ -27,22 +28,23 @@ h3 {
   align-items: left;
 }
 
-.menuFont {
-  font-size: 1.5rem !important;
+a.nav-link.menuFont {
+  font-size: 1.4rem !important;
 }
 
 .producto {
   width: 12rem;
   position: relative;
   background-color: #f0f0f0;
+  border-radius: 0% 0% 5% 5%;
 }
 .producto__imagen {
-  width: 12rem;
-  height: 10rem;
+  width: auto;
+  height: auto;
 }
 .producto__imagen--foto {
   width: 12rem;
-  height: 10rem;
+  height: 12rem;
 }
 .producto__titulo {
   height: 3rem;
@@ -59,12 +61,19 @@ h3 {
   top: 0;
   right: 0;
   height: 1.6rem;
-  background-color: rgba(255, 255, 255, 0.711);
+  background-color: rgba(57, 110, 255, 0.596);
+  border-radius: 12% 0% 12% 12%;
+  border: none;
+}
+.producto__boton:hover {
+  background-color: rgba(21, 190, 21, 0.819);
+  transform: scale(1.2);
+  transform-origin: right top;
 }
 .producto:hover {
-  transform-origin: center; /* punto de origen para la transformación */
-  transform: scale(1.2); /* aumenta 1.5 en ambos ejes */
-  transition: all 0.3s ease; /* transición suave */
+  transform-origin: center;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
   z-index: 10;
 }
 
@@ -106,6 +115,12 @@ h3 {
   width: 5rem;
   text-align: left;
 }
+.contactanos .formularioContacto .formularioContacto__campo input:valid {
+  border: 2px solid #00ff1a;
+}
+.contactanos .formularioContacto .formularioContacto__campo input:invalid {
+  border: 2px solid red;
+}
 
 .text_info {
   font-family: "Jost", sans-serif;
@@ -126,11 +141,32 @@ h3 {
 }
 
 .accordion-item {
-  background-color: rgba(255, 255, 255, 0.1) !important; /* negro 60% */
+  background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 .accordion-button {
-  background-color: rgba(0, 200, 255, 0.2) !important; /* negro 60% */
+  background-color: rgba(0, 200, 255, 0.2) !important;
+}
+
+.indice {
+  list-style: none;
+  padding: 0;
+  margin: 2rem;
+  display: flex;
+  gap: 1rem; /* Espacio entre los elementos del índice */
+  justify-content: center;
+  gap: 1rem;
+}
+.indice a {
+  color: inherit; /* Mantiene el color del texto del enlace */
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .indice {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 
 .piePagina {
@@ -147,26 +183,11 @@ main {
 
 .gridProductos {
   display: grid;
-  grid-template-columns: repeat(4, minmax(12rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   margin: 2rem;
-  gap: 1rem;
+  gap: 1.5rem;
   justify-content: center;
   justify-items: center;
-}
-
-.gridProductos {
-  display: grid;
-}
-@media (max-width: 900px) {
-  .gridProductos {
-    grid-template-columns: repeat(2, minmax(12rem, 1fr));
-    gap: 1.5rem;
-  }
-}
-@media (max-width: 576px) {
-  .gridProductos {
-    grid-template-columns: repeat(1, minmax(12rem, 1fr));
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */
