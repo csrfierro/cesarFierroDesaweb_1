@@ -12,10 +12,6 @@ body {
   background-repeat: no-repeat;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 /* reset de css , siempre presente*/
 * {
   margin: 0%;
