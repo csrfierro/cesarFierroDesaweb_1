@@ -1,12 +1,12 @@
 // Variables para el componente de tarjetas de productos
 $producto-background-color: #f0f0f0;
-$producto-width: 12rem;
 $producto__imagen-width: auto;
 $producto__imagen-height: auto;
 $producto__imagen--foto-width: 12rem;
 $producto__imagen--foto-height: 12rem;
 $producto__titulo-height: 3rem;
 $producto__precio-color: green;
+$producto__precio-height: 2rem;
 $producto__precio-font-weight: bold;
 $producto__precio-font-size: 1.2rem;
 $producto__boton-background-color: rgba(57, 110, 255, 0.596);
@@ -17,6 +17,14 @@ $producto-boton-scale-hover: 1.2;
 $producto-boton-color-hover: rgba(21, 190, 21, 0.819);
 $producto-boton-transform-origin-hover: right top;
 $producto-boton-border-radius: 12% 0% 12% 12%;
+$producto-width: $producto__imagen--foto-height+$producto__titulo-height+$producto__precio-height;
+$producto-width: 12rem;
+// gridProducto
+$gridProductos-margin:2rem;
+$gridProductos-gap:1.5rem;
+
+
+
 
 // responsive breakpoints
 $breakpoints: (
