@@ -5,7 +5,6 @@
   width: v.$producto-width;
   position: relative;
   background-color: v.$producto-background-color;
-  border-radius: 0% 0% 5% 5%;
 
   &__imagen {
     width: v.$producto__imagen-width;
@@ -23,6 +22,7 @@
   }
 
   &__precio {
+    height: v.$producto__precio-height;
     color: v.$producto__precio-color;
     font-weight: v.$producto__precio-font-weight;
     font-size: v.$producto__precio-font-size;
@@ -34,10 +34,82 @@
     @include m.boton-hover;
   }
 
-  &:hover {
-    transform-origin: center;
-    transform: scale(1.2); 
-    transition: all 0.3s ease; 
-    z-index: 10;
+  // &:hover {
+  //   transform-origin: center;
+  //   transform: scale(1.2);
+  //   transition: all 0.3s ease;
+  //   z-index: 10;
+  // }
+}
+
+.producto {
+  perspective: 60;
+  width: v.$producto-width; /* ancho de la tarjeta */
+  height: 17rem; /* alto de la tarjeta */
+  position: relative;
+}
+
+
+.producto__check {
+  appearance: none; /* elimina estilo nativo del checkbox */
+  position: absolute; /* lo posiciona dentro de .card */
+  bottom: 0; /* esquina superior */
+  right: 0; /* esquina derecha */
+  width: 2rem; /* tamaño del área clickeable */
+  height: 2rem;
+  background: green; /* color visible */
+  cursor: pointer; /* indica interacción */
+  z-index: 20; /* lo pone por encima de la card */
+  /* recorta el cuadrado en forma triangular */
+  clip-path: polygon(100% 100%, 100% 0, 0 100%);
+  padding: 0.6rem 1.2rem; /* espacio interno → agranda área clickeable */
+  /* definimos qué propiedades se animan */
+  transform-origin: bottom right; /* punto desde donde escala (esquina superior derecha,no desde el centro) */
+  transition:
+    background-color 0.5s ease-in-out,
+    transform 1s ease;
+}
+
+.producto__check:hover {
+    background-color: rgb(0, 191, 255); /* color al pasar el mouse */
+  transform: scale(1.2); /* agranda el elemento 20% */
+}
+
+.producto__tarjeta {
+    width: 100%; /* ocupa toda la card */
+  height: 100%;
+  transform-style: preserve-3d; /* mantiene a los hijos en 3D */
+  transition: transform 0.6s; /* animación suave al girar */
+}
+
+.producto__check:checked ~ .producto__tarjeta {
+  transform: rotateY(180deg); /* rotación horizontal */
+}
+
+.producto__frente {
+  width: 100%; /* ocupa toda la card */
+  height: 100%;
+  transform-style: preserve-3d; /* mantiene a los hijos en 3D */
+  transition: transform 0.6s; /* animación suave al girar */
+}
+
+.producto__atras {
+  transform: rotateY(180deg); /* lista para aparecer al girar */
+  h4 {
+    font-size: 1.2rem;
   }
 }
+
+.producto__frente,.producto__atras {
+  width: 100%; /* cubren toda la tarjeta */
+  height: 100%;
+  position: absolute; /* se superponen */
+  inset: 0; /* top/right/bottom/left = 0 */
+  backface-visibility: hidden; /* oculta la cara trasera al girar */
+}
+
+
+
+
+
+

@@ -1,10 +1,12 @@
 @use "../utils/mixins" as mx;
+@use "../utils/variables" as v;
+
 
 .gridProductos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-  margin: 2rem;
-  gap: 1.5rem;
+  margin: v.$gridProductos-margin;
+  gap: v.$gridProductos-gap;
   justify-content: center;
   justify-items: center;
 }
