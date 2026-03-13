@@ -1,14 +1,52 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
+    <!-- Codificación de caracteres -->
     <meta charset="UTF-8" />
+    <!-- Hace que la página sea responsive en celulares, tablets y pantallas pequeñas -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Acuario</title>
+    <!-- Título de la página (SEO) -->
+    <title>
+      Mi Acuario | Tienda de Acuarios, Peces, Filtros y Acuarios Plantados
+    </title>
+    <!-- Descripción de la página para buscadores -->
+    <meta
+      name="description"
+      content="Tienda online de acuariofilia. Peces, acuarios, filtros, iluminación LED y productos para acuarios plantados. Información y recursos para aficionados."
+    />
+    <!-- URL canónica -->
+    <link rel="canonical" href="https://miacuariofinal.vercel.app/index.html" />
+    <!-- Open Graph: datos para compartir en redes sociales -->
+    <meta
+      property="og:title"
+      content="Mi Acuario - Tienda de Acuarios y Peces"
+    />
+    <meta
+      property="og:description"
+      content="Compra peces, acuarios, filtros e iluminación para acuarios plantados en nuestra tienda online de acuariofilia."
+    />
+    <meta
+      property="og:image"
+      content="https://miacuariofinal.vercel.app/recursos/img/logo.png"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://miacuariofinal.vercel.app/index.html"
+    />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./recursos/img/logo.png" />
+    <!-- CSS del sitio -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
     />
+    <!-- Fuentes de Google -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Jost:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap");
+    </style>
   </head>
 
   <body class="container-xxl">
@@ -17,9 +55,13 @@
         <div
           class="logo__imagen col-2 col-sm-1 d-flex justify-content-center align-items-center"
         >
-          <a href="./index.html"
-            ><img src="./recursos/img/logo.png" alt=""
-          /></a>
+          <a href="./index.html">
+            <img
+              src="../recursos/img/logo.png"
+              alt="Logo tienda Mi Acuario"
+              title="Mi Acuario - tienda de acuariofilia"
+            />
+          </a>
         </div>
         <div
           class="col-12 col-sm-5 d-flex justify-content-center justify-content-sm-start align-items-center"
@@ -90,15 +132,21 @@
                         class="producto__imagen--foto"
                         src="./recursos/img/apistograma-borellii.png"
                         alt="Apistograma Borellii - PAREJA"
+                        loading="lazy"
                       />
                     </div>
-                    <p class="producto__titulo">Apistograma Borellii - PAREJA</p>
+                    <p class="producto__titulo">
+                      Apistograma Borellii - PAREJA
+                    </p>
                     <p class="producto__precio">$290.99</p>
                     <button class="producto__boton">Carrito</button>
                   </div>
                   <div class="producto__atras">
                     <h4>Apistograma Borellii - PAREJA</h4>
-                    <p>Pez pequeño y colorido, ideal para acuarios plantados. Muy territorial pero pacífico con otros peces.</p>
+                    <p>
+                      Pez pequeño y colorido, ideal para acuarios plantados. Muy
+                      territorial pero pacífico con otros peces.
+                    </p>
                   </div>
                 </div>
               </article>
@@ -112,15 +160,21 @@
                         class="producto__imagen--foto"
                         src="./recursos/img/chihiros-b30-shade.png"
                         alt="Chihiros B30 Shade con espejo"
+                        loading="lazy"
                       />
                     </div>
-                    <p class="producto__titulo">Chihiros B30 Shade con espejo</p>
+                    <p class="producto__titulo">
+                      Chihiros B30 Shade con espejo
+                    </p>
                     <p class="producto__precio">$120.99</p>
                     <button class="producto__boton">Carrito</button>
                   </div>
                   <div class="producto__atras">
                     <h4>Chihiros B30 Shade con espejo</h4>
-                    <p>Iluminación LED de alta calidad para acuarios. Espectro completo ideal para plantas acuáticas.</p>
+                    <p>
+                      Iluminación LED de alta calidad para acuarios. Espectro
+                      completo ideal para plantas acuáticas.
+                    </p>
                   </div>
                 </div>
               </article>
@@ -134,15 +188,21 @@
                         class="producto__imagen--foto"
                         src="./recursos/img/caridina-japonica-xl.png"
                         alt="Caridina Japonica XL Come Algas"
+                        loading="lazy"
                       />
                     </div>
-                    <p class="producto__titulo">Caridina Japonica XL Come Algas</p>
+                    <p class="producto__titulo">
+                      Caridina Japonica XL Come Algas
+                    </p>
                     <p class="producto__precio">$310.00</p>
                     <button class="producto__boton">Carrito</button>
                   </div>
                   <div class="producto__atras">
                     <h4>Caridina Japonica XL Come Algas</h4>
-                    <p>Camarón limpiador expertamente seleccionado. Excelente para mantener el acuario libre de algas.</p>
+                    <p>
+                      Camarón limpiador expertamente seleccionado. Excelente
+                      para mantener el acuario libre de algas.
+                    </p>
                   </div>
                 </div>
               </article>
@@ -156,15 +216,21 @@
                         class="producto__imagen--foto"
                         src="./recursos/img/caridina-pinocho-m.png"
                         alt="Caridina Pinocho M Come Algas"
+                        loading="lazy"
                       />
                     </div>
-                    <p class="producto__titulo">Caridina Pinocho M Come Algas</p>
+                    <p class="producto__titulo">
+                      Caridina Pinocho M Come Algas
+                    </p>
                     <p class="producto__precio">$210.00</p>
                     <button class="producto__boton">Carrito</button>
                   </div>
                   <div class="producto__atras">
                     <h4>Caridina Pinocho M Come Algas</h4>
-                    <p>Camarón único con forma característica de nariz. Perfecto para acuarios plantados y comunitarios.</p>
+                    <p>
+                      Camarón único con forma característica de nariz. Perfecto
+                      para acuarios plantados y comunitarios.
+                    </p>
                   </div>
                 </div>
               </article>
@@ -183,6 +249,7 @@
                         class="producto__imagen--foto"
                         src="./recursos/img/Puntius-titteya-ladies.png"
                         alt="Puntius titteya ladies"
+                        loading="lazy"
                       />
                     </div>
                     <p class="producto__titulo">Puntius titteya ladies</p>
@@ -191,7 +258,10 @@
                   </div>
                   <div class="producto__atras">
                     <h4>Puntius titteya ladies</h4>
-                    <p>Pez pequeño y activo con colores brillantes. Se mantiene mejor en grupos en acuarios de mediano tamaño.</p>
+                    <p>
+                      Pez pequeño y activo con colores brillantes. Se mantiene
+                      mejor en grupos en acuarios de mediano tamaño.
+                    </p>
                   </div>
                 </div>
               </article>
@@ -205,6 +275,7 @@
                         class="producto__imagen--foto"
                         src="./recursos/img/pez-platy-nascapers-online.png"
                         alt="Xiphophorus maculatus (Platy)"
+                        loading="lazy"
                       />
                     </div>
                     <p class="producto__titulo">
@@ -215,7 +286,10 @@
                   </div>
                   <div class="producto__atras">
                     <h4>Xiphophorus maculatus (Platy)</h4>
-                    <p>Pez robusto y colorido, fácil de cuidar. Ideal para principiantes en acuarios comunitarios.</p>
+                    <p>
+                      Pez robusto y colorido, fácil de cuidar. Ideal para
+                      principiantes en acuarios comunitarios.
+                    </p>
                   </div>
                 </div>
               </article>
@@ -229,6 +303,7 @@
                         class="producto__imagen--foto"
                         src="./recursos/img/filtro-tidal-110-seachem.png"
                         alt="Filtro Tidal 110"
+                        loading="lazy"
                       />
                     </div>
                     <p class="producto__titulo">Filtro Tidal 110</p>
@@ -237,7 +312,10 @@
                   </div>
                   <div class="producto__atras">
                     <h4>Filtro Tidal 110</h4>
-                    <p>Filtro de flujo superior de alto rendimiento. Excelente para acuarios plantados de agua dulce.</p>
+                    <p>
+                      Filtro de flujo superior de alto rendimiento. Excelente
+                      para acuarios plantados de agua dulce.
+                    </p>
                   </div>
                 </div>
               </article>
@@ -251,6 +329,7 @@
                         class="producto__imagen--foto"
                         src="./recursos/img/neon-tetra-fish.png"
                         alt="Neon Tetra (Paracheirodon innesi)"
+                        loading="lazy"
                       />
                     </div>
                     <p class="producto__titulo">
@@ -261,7 +340,10 @@
                   </div>
                   <div class="producto__atras">
                     <h4>Neon Tetra (Paracheirodon innesi)</h4>
-                    <p>Pez pequeño con franjas de neón vibrante. Debe mantenerse en cardúmenes para mejor bienestar.</p>
+                    <p>
+                      Pez pequeño con franjas de neón vibrante. Debe mantenerse
+                      en cardúmenes para mejor bienestar.
+                    </p>
                   </div>
                 </div>
               </article>
@@ -280,6 +362,7 @@
                         class="producto__imagen--foto"
                         src="./recursos/img/caracol-bicolor-rabbit.png"
                         alt="Caracol Bicolor Rabbit Snail"
+                        loading="lazy"
                       />
                     </div>
                     <p class="producto__titulo">Caracol Bicolor Rabbit Snail</p>
@@ -288,7 +371,10 @@
                   </div>
                   <div class="producto__atras">
                     <h4>Caracol Bicolor Rabbit Snail</h4>
-                    <p>Caracol ornamental hermoso de colores contrastantes. Perfectamente seguro para plantas vivas.</p>
+                    <p>
+                      Caracol ornamental hermoso de colores contrastantes.
+                      Perfectamente seguro para plantas vivas.
+                    </p>
                   </div>
                 </div>
               </article>
@@ -302,15 +388,21 @@
                         class="producto__imagen--foto"
                         src="./recursos/img/disco-leopard-premium.png"
                         alt="Pez Disco Leopard Premium 7 cm"
+                        loading="lazy"
                       />
                     </div>
-                    <p class="producto__titulo">Pez Disco Leopard Premium 7 cm</p>
+                    <p class="producto__titulo">
+                      Pez Disco Leopard Premium 7 cm
+                    </p>
                     <p class="producto__precio">$120.99</p>
                     <button class="producto__boton">Carrito</button>
                   </div>
                   <div class="producto__atras">
                     <h4>Pez Disco Leopard Premium 7 cm</h4>
-                    <p>Pez de agua cálida muy colorido. Requiere acuarios amplios y aguas bien mantenidas.</p>
+                    <p>
+                      Pez de agua cálida muy colorido. Requiere acuarios amplios
+                      y aguas bien mantenidas.
+                    </p>
                   </div>
                 </div>
               </article>
@@ -324,6 +416,7 @@
                         class="producto__imagen--foto"
                         src="./recursos/img/fluval-307.png"
                         alt="Fluval Filtro 307"
+                        loading="lazy"
                       />
                     </div>
                     <p class="producto__titulo">Fluval Filtro 307</p>
@@ -332,7 +425,10 @@
                   </div>
                   <div class="producto__atras">
                     <h4>Fluval Filtro 307</h4>
-                    <p>Filtro canister de potencia extrema con capacidad de media a gran. Excelente flujo y versatilidad.</p>
+                    <p>
+                      Filtro canister de potencia extrema con capacidad de media
+                      a gran. Excelente flujo y versatilidad.
+                    </p>
                   </div>
                 </div>
               </article>
@@ -346,6 +442,7 @@
                         class="producto__imagen--foto"
                         src="./recursos/img/aulonocara-dragon.png"
                         alt="Aulonocara Dragón Sangre"
+                        loading="lazy"
                       />
                     </div>
                     <p class="producto__titulo">
@@ -356,7 +453,10 @@
                   </div>
                   <div class="producto__atras">
                     <h4>Aulonocara Dragón Sangre - Aulonocara sp</h4>
-                    <p>Cíclido africano espectacular con colores rojo sangre vibrantes. Pez depredador con carácter.</p>
+                    <p>
+                      Cíclido africano espectacular con colores rojo sangre
+                      vibrantes. Pez depredador con carácter.
+                    </p>
                   </div>
                 </div>
               </article>
@@ -471,13 +571,19 @@
     </main>
     <footer class="piePagina">
       <a href="https://www.instagram.com/" target="_blank"
-        ><img src="./recursos/img/instagram-50.png" alt=""
+        ><img
+          src="./recursos/img/instagram-50.png"
+          alt="Logo de Instagram"
+          loading="lazy"
       /></a>
       <a href="https://www.youtube.com/" target="_blank"
-        ><img src="./recursos/img/youtube-50.png" alt=""
+        ><img
+          src="./recursos/img/youtube-50.png"
+          alt="Logo de Youtube"
+          loading="lazy"
       /></a>
       <a href="https://x.com/" target="_blank"
-        ><img src="./recursos/img/x-50.png" alt=""
+        ><img src="./recursos/img/x-50.png" alt="Logo de X" loading="lazy"
       /></a>
     </footer>
     <script
